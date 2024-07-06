@@ -1,0 +1,19 @@
+import pandas as pd
+
+def booking(date_range_periods):
+    while True:
+        x = input("Do you have bookings:")
+        if x=="yes":
+            bookings=int(input("Enter the number of bookings:"))
+            my_list.append(bookings)
+            continue
+        else:
+            break
+    print(f"The number of bookings in {date_range_periods} is: {my_list}.")
+
+if __name__ == '__main__':
+    my_list=[]
+
+    date_range_periods = pd.date_range(start='2024-01-01',periods=1, freq='W-MON')
+
+    booking(date_range_periods)
