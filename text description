@@ -1,0 +1,11 @@
+def search(sentence):
+
+    x=sentence.split(" ")
+    for word in x:
+        word=f"\033[33m{word}\033[m"
+        print(f"<strong>{word}</strong>",end=" ")
+
+if __name__ == '__main__':
+
+    sentence=input("Enter a sentence: ")
+    search(sentence)
